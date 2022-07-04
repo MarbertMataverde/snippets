@@ -1,0 +1,40 @@
+{
+    "Preferred Stateless Widget": {
+        "scope": "flutter,dart",
+        "prefix": "stlw",
+        "body": [
+            "import 'package:flutter/material.dart';\n",
+            "class ${1:StatelessName} extends StatelessWidget {",
+            "  const ${1:StatelessName}({super.key});\n",
+            "  @override",
+            "  Widget build(BuildContext context) {",
+            "    return const Center(",
+            "      child: Text('${2:Page Name}'),",
+            "    );",
+            "  }",
+            "}\n",
+        ],
+        "description": "This is my preferred stateless widget"
+    },
+    "Preferred Stateful Widget": {
+        "scope": "flutter,dart",
+        "prefix": "stfw",
+        "body": [
+            "import 'package:flutter/material.dart'\n;",
+            "class ${1:name} extends StatefulWidget {",
+            "  const ${1:name}({super.key});\n",
+            "  @override",
+            "  State<${1:name}> createState() => _${1:name}State();",
+            "}\n",
+            "class _${1:name}State extends State<${1:name}> {",
+            "  @override",
+            "  Widget build(BuildContext context) {",
+            "    return const Center(",
+            "      child: Text('${2:Page Name}'),",
+            "    );",
+            "  }",
+            "}\n"
+        ],
+        "description": "This is my preferred stateful widget"
+    }
+}
